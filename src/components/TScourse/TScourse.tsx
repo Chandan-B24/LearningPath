@@ -1,8 +1,11 @@
 import React from 'react'
+import NotFound from '../NotFound/NotFound'
 
 const TScourse:React.FC = () => {
   return (
-    <div>TScourse</div>
+    <div>
+      <NotFound/>
+    </div>
   )
 }
 

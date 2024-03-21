@@ -1,8 +1,11 @@
 import React from 'react'
+import NotFound from '../NotFound/NotFound'
 
 const JSArrayMethods = () => {
   return (
-    <div>JSArrayMethods</div>
+    <div>
+      <NotFound/>
+    </div>
   )
 }
 
