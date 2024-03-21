@@ -17,7 +17,7 @@ const CodeSnippet:React.FC<Code> = ({children}) => {
 
   return (
         <>
-          <div className='mzx-w-2xl min-w-[25rem] bg-[#3a404d] rounded-md overflow-hidden my-4'>
+          <div className='mzx-w-2xl bg-[#3a404d] rounded-md overflow-hidden my-4'>
             <div className='flex justify-between px-4 text-white text-xs item-center py-2'>
               <p className='text-sm font-poppins'>Example Code</p>
             { copy ? 

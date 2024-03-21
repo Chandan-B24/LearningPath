@@ -7,7 +7,7 @@ type SubHeadingProps = {
 
 const SubHeading = (props:SubHeadingProps) => {
   return (
-    <h4 className={`font-poppins font-medium text-2xl my-2 ${props.className}`}>{props.children}</h4>
+    <h4 className={`font-poppins font-medium text-lg lg:text-2xl my-2 ${props.className}`}>{props.children}</h4>
   )
 }
 

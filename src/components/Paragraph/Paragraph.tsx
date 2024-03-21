@@ -7,7 +7,7 @@ type ParagraphsProps = {
 
 const Paragraph = (props : ParagraphsProps) => {
   return (
-    <p className={`text-[16px] mb-2 font-poppins text-justify font-extralight text-wrap leading-7 text-gray-500 ${props.className}`}>{props.children}</p>
+    <p className={`text-[13px] lg:text-[16px] mb-2 font-poppins text-justify font-extralight text-wrap leading-7 text-gray-500 ${props.className}`}>{props.children}</p>
   )
 }
 
