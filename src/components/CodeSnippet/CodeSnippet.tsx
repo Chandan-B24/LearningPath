@@ -3,6 +3,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { IoClipboardOutline } from "react-icons/io5";
 import { BsClipboardCheck } from "react-icons/bs";
+import Button from '../Buttons/Button';
 
 
 
@@ -15,6 +16,15 @@ const CodeSnippet:React.FC<Code> = ({children}) => {
  
   const [copy,setCopy] = useState<boolean>(false)
 
+  const handleCopyClipBoard = ():void => {
+    navigator.clipboard.writeText(children);
+    setCopy(true)
+    setTimeout(()=>{
+      setCopy(false)
+    },3000)
+  }
+
+
   return (
         <>
           <div className='mzx-w-2xl bg-[#3a404d] rounded-md overflow-hidden my-4'>
@@ -22,21 +32,15 @@ const CodeSnippet:React.FC<Code> = ({children}) => {
               <p className='text-sm font-poppins'>Example Code</p>
             { copy ? 
              ( 
-             <button className='inline-flex items-center gap-1 font-poppins'>
+             <Button clasName='inline-flex items-center gap-1 font-poppins'>
                 <span className='text-base '><BsClipboardCheck/></span>
                 Copied
-            </button>)
+            </Button>)
             : 
-            (<button className='inline-flex items-center gap-1 font-poppins' onClick={()=>{
-              navigator.clipboard.writeText(children);
-              setCopy(true)
-              setTimeout(()=>{
-                setCopy(false)
-              },3000)
-            }}>
+            (<Button clasName='inline-flex items-center gap-1 font-poppins' handelClick={()=>{handleCopyClipBoard()}}>
                 <span className='text-base '><IoClipboardOutline/></span>
                 Copy code
-              </button>)
+              </Button>)
               }
             </div>
             <SyntaxHighlighter language="javascript" style={atomOneDark} wrapLongLines={true}>
