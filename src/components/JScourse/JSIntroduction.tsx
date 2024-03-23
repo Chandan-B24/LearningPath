@@ -11,7 +11,7 @@ const JSIntroduction = () => {
     <div className='mb-24'>
         <div className='my-5'>
             <Heading>1.Introduction</Heading>
-            <Paragraph>Welcome to the learn-js.org interactive JavaScript tutorial.</Paragraph>
+            <Paragraph>Welcome to the Daily Tracker learning path.</Paragraph>
             <Paragraph>Whether you are an experienced programmer or not, this website is intended for everyone who wishes to learn the JavaScript programming language.</Paragraph>
             <Paragraph>JavaScript is a very powerful language. It can be used within any browser in the world. On top of that, it can be used to write server-side code using node.js.</Paragraph>
             <Paragraph>Let's start coding our first javscript as hello world program.</Paragraph>

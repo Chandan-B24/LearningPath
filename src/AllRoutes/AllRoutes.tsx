@@ -11,7 +11,7 @@ const AllRoutes : React.FC = () => {
         <Routes>
             <Route path="/"  Component={Home} />
             <Route path="/js/*"  Component={JScourse} />
-            <Route path="/ts"  Component={TScourse} />
+            <Route path="/ts/*"  Component={TScourse} />
         </Routes>
         </BrowserRouter>
     </>
