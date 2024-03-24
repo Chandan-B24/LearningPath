@@ -5,6 +5,8 @@ import { itemsTS } from '../../constatns/tscourse'
 import TSBasicTypes from './TSBasicTypes'
 import TSInterface from './TSInterface'
 import TStypes from './TStypes'
+import TSArrays from './TSArrays'
+import TSEnums from './TSEnums'
 
 const TScourse:React.FC = () => {
   return (
@@ -15,6 +17,8 @@ const TScourse:React.FC = () => {
       {location.pathname === '/ts/basic' ? <TSBasicTypes/> : null}
       {location.pathname === '/ts/interface' ? <TSInterface/> : null}
       {location.pathname === '/ts/types' ? <TStypes/> : null}
+      {location.pathname === '/ts/arrays' ? <TSArrays/> : null}
+      {location.pathname === '/ts/enums' ? <TSEnums/> : null}
       </div>
     </>
   )

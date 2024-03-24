@@ -43,7 +43,7 @@ const CodeSnippet:React.FC<Code> = ({children}) => {
               </Button>)
               }
             </div>
-            <SyntaxHighlighter language="javascript" style={atomOneDark} wrapLongLines={true}>
+            <SyntaxHighlighter language="javascript" style={atomOneDark} wrapLongLines={true} className='text-sm md:text-lg lg:text-lg'>
                 {children}
             </SyntaxHighlighter>
           </div>

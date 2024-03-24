@@ -35,4 +35,20 @@ export const itemsTS: MenuProps['items'] = [
             </Link>
         )
     },
+    {
+        key: '5',
+        label: (
+            <Link to='/ts/arrays'>
+                Arrays
+            </Link>
+        )
+    },
+    {
+        key: '6',
+        label: (
+            <Link to='/ts/enums'>
+                Enums
+            </Link>
+        )
+    },
 ];
