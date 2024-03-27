@@ -51,4 +51,52 @@ export const itemsTS: MenuProps['items'] = [
             </Link>
         )
     },
+    {
+        key: '7',
+        label: (
+            <Link to='/ts/generics'>
+                Generics
+            </Link>
+        )
+    },
+    {
+        key: '8',
+        label: (
+            <Link to='/ts/modules'>
+                Modules
+            </Link>
+        )
+    },
+    {
+        key: '9',
+        label: (
+            <Link to='/ts/partial'>
+                Partial
+            </Link>
+        )
+    },
+    {
+        key: '10',
+        label: (
+            <Link to='/ts/pick'>
+                Pick
+            </Link>
+        )
+    },
+    {
+        key: '11',
+        label: (
+            <Link to='/ts/readonly'>
+                Readonly
+            </Link>
+        )
+    },
+    {
+        key: '12',
+        label: (
+            <Link to='/ts/record'>
+                Record and Map
+            </Link>
+        )
+    },
 ];
